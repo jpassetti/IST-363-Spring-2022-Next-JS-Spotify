@@ -27,12 +27,12 @@ const AlbumsPage = ({ albums }) => {
 			const { featuredImage, title, slug } = album.node;
 			const { sourceUrl, altText, mediaDetails } = featuredImage.node; 
 			return <Col key={index} xs="6" sm="4">
-					<Image 
-						src={sourceUrl}
-						alt={altText}
-						width={mediaDetails.width}
-						height={mediaDetails.height}
-					/>
+				<Image 
+					src={sourceUrl}
+					alt={altText}
+					width={mediaDetails.width}
+					height={mediaDetails.height}
+				/>
 				<Heading level="3">{title}</Heading>
 				<Paragraph>
 					<Link href={`/albums/${slug}`}>
